@@ -36,6 +36,7 @@
     }
 </style>
 
+
 <head>
     <title>Google Homepage</title>
 </head>
@@ -49,16 +50,26 @@
         <img src="google_logo.png" width='272' height='92' class="center">
     </a>
 
+    <!--javascript funtion to get user input and go to search page-->
+    <script>
+        function goToPage()
+        {
+            var input = document.getElementById("search").value;
+            //alert(input)
+            location.href = "https://www.google.com/search?q=" + input;
+            alert(location.href);
+        }
+    </script>
+
     <!--search bar-->
-    <form>
+    <form autocomplete="off">
         <label>
-            <input type="text" placeholder="Search" required class="search_bar_style">
+            <input type="text" placeholder="Search" required class="search_bar_style" id="search" value="">
         </label>
 
-        <button type="button" class="position_enter_button">Enter</button>
+        <!--enter button-->
+        <input type="submit" class="position_enter_button" onclick="goToPage()";></button>
     </form>
-    
-
 </main>
 
 </html>

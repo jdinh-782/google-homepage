@@ -1,1 +1,1 @@
-This is an introduction to creating an html/css project!
+Introductory Google homepage project using html/css/javascript and Git/Linux functionality.

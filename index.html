@@ -2,13 +2,37 @@
 <html lang="en">
 
 <style>
-    /*css class for entering the google logo*/
+    /*css class for centering the google logo*/
     .center
     {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 150px;
+    }
+
+    /*css class for search/input box*/
+    .search_bar_style
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 5px 10px;
+        width: 25%;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+
+    /*css class for enter buttton*/
+    .position_enter_button
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
     }
 </style>
 
@@ -24,6 +48,16 @@
     <a>
         <img src="google_logo.png" width='272' height='92' class="center">
     </a>
+
+    <!--search bar-->
+    <form>
+        <label>
+            <input type="text" placeholder="Search" required class="search_bar_style">
+        </label>
+
+        <button type="button" class="position_enter_button">Enter</button>
+    </form>
+    
 
 </main>
 
